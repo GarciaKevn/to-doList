@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 import java.util.UUID;
 
-
+@CrossOrigin( origins = "http://localhost:3000")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("tasks")
@@ -41,6 +41,12 @@ public class TaskController {
     @PutMapping("/{taskId}")
     public ResponseEntity<Void> updateTask(@PathVariable UUID taskId, @RequestBody Task request){
         taskService.updateTask(taskId, request);
+        return ResponseEntity.noContent().build();
+    }
+
+    @DeleteMapping("/{taskId}")
+    public ResponseEntity<Void> deleteTask(@PathVariable UUID taskId){
+        taskService.deleteTask(taskId);
         return ResponseEntity.noContent().build();
     }
 }
