@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  color: white;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+}
+
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.aplicacion-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Listas de Tareas */
+.task-list{
+  background-color: #a786b0;
+  border-radius: 10px;
+  width: 75%;
+  float: left;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+td {
+  padding: 0; /* Elimina el relleno predeterminado */
+}
+
+.table th {
+  border-top: none;
+}
+
+tbody {
+  margin: 0; /* Elimina cualquier margen */
+  padding: 0; /* Elimina cualquier relleno */
+}
+
+.tareas-lista-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 25px;
+  margin: auto;
+  border-radius: 26px;
+}
+
+/* Estilos de la tabla */
+
+/*form*/
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: black;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+button.save-btn:hover {
+  background-color: #45a049;
+}
+
+.check {
+  margin: 0;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Estilos de los botones */
+.delete-btn,
+.update-btn {
+  background-color: #bd754e;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.delete-btn:hover,
+.update-btn:hover {
+  background-color: #a15f36;
+}
+
+/* Estilos generales del modal */
+.modal-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea el contenido a la derecha */
+}
+
+/* Estilos del formulario dentro del modal */
+.form-group {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Asegura que el formulario ocupe todo el ancho del modal */
+}
+
+.form-control {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+/* Estilos de los botones */
+button.save-btn,
+button.close-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.save-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+button.save-btn:hover {
+  background-color: #0056b3;
+}
+
+button.close-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.close-btn:hover {
+  background-color: #5a6268;
+}
